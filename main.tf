@@ -7,7 +7,7 @@ module "wireguard" {
 }
 
 module "etcd" {
-  source = "git::https://github.com/suquant/tf_etcd.git?ref=v1.1.0"
+  source = "git::https://github.com/suquant/tf_etcd.git?ref=v1.1.1"
 
   count       = "${var.master_count}"
   connections = ["${var.master_public_ips}"]
